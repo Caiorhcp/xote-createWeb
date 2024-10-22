@@ -17,16 +17,6 @@ const ListEvents = () => {
     fetchEvents();
   }, []);
 
-  const handleDelete = async (id) => {
-    try {
-      await axios.delete(`https://xote-api-development.up.railway.app/xote/delete/${id}`);
-      setEvents(events.filter(event => event._id !== id)); // Atualiza a lista removendo o evento deletado
-      alert('Evento excluído com sucesso!');
-    } catch (error) {
-      console.error('Erro ao excluir o evento:', error);
-    }
-  };
-
   return (
     <div>
       <h1>Lista de Eventos</h1>
@@ -39,7 +29,6 @@ const ListEvents = () => {
             <p><strong>Hora:</strong> {event.time}</p>
             <p><strong>Tipo:</strong> {event.type}</p>
             <p><strong>Status:</strong> {event.pay ? 'Pago' : 'Não Pago'}</p>
-            <button onClick={() => handleDelete(event._id)}>Excluir Evento</button>
           </li>
         ))}
       </ul>
