@@ -1,0 +1,28 @@
+/* src/components/Home.css */
+.home-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-links {
+    margin-top: 20px;
+  }
+  
+  .nav-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #57607A; /* Sua cor preferida */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: #2F3349; /* Cor ao passar o mouse */
+  }
+  

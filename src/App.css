@@ -1,0 +1,31 @@
+/* src/App.css */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+img {
+  display: block;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #e74c3c; /* Cor vermelha para deletar */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #c0392b; /* Cor mais escura ao passar o mouse */
+}
