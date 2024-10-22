@@ -23,12 +23,16 @@ const ListEvents = () => {
       <ul>
         {events.map((event) => (
           <li key={event._id}>
+            <img src={event.image_url} alt="image"/>
             <h2>{event.title}</h2>
             <p>{event.description}</p>
             <p><strong>Data:</strong> {event.date}</p>
             <p><strong>Hora:</strong> {event.time}</p>
             <p><strong>Tipo:</strong> {event.type}</p>
             <p><strong>Status:</strong> {event.pay ? 'Pago' : 'Não Pago'}</p>
+            <p>
+              Google Maps: <a href={event.localgoogleurl} target="_blank" rel="noopener noreferrer">Ver no Google Maps</a>
+            </p>
           </li>
         ))}
       </ul>
