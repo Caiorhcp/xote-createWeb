@@ -1,7 +1,8 @@
 // src/components/CreateEvent.js
 import { useState } from 'react';
 import axios from 'axios';
-import '../styles.css'; // Importando os estilos
+import '../styles.css'; 
+
 
 const CreateEvent = () => {
   const [eventData, setEventData] = useState({

@@ -3,7 +3,7 @@ import axios from 'axios';
 import Modal from 'react-modal';
 import './DeleteEvent.css';
 
-Modal.setAppElement('#root'); // Certifique-se de que o ID esteja correto
+Modal.setAppElement('#root'); 
 
 const DeleteEvent = () => {
   const [events, setEvents] = useState([]);

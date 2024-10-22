@@ -1,7 +1,7 @@
 // src/components/EditEvent.jsx
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../styles.css'; // Importando os estilos
+import '../styles.css'; 
 
 const EditEvent = () => {
   const [events, setEvents] = useState([]);
